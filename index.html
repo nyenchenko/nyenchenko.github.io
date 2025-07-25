@@ -3,26 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome GitHub Page</title>
+    <title>My Awesome GitHub Page - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
             color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50; /* Dark blue-grey */
+            color: #ecf0f1; /* Light grey */
+            padding: 1em 0;
             text-align: center;
         }
-        h1 {
-            color: #0056b3;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        p {
-            font-size: 1.1em;
+
+        nav {
+            background-color: #34495e; /* Slightly lighter blue-grey */
+            padding: 0.8em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Makes items display in a row */
+            justify-content: center; /* Centers the navigation items */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #2ecc71; /* Green highlight on hover */
+            border-radius: 4px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 960px; /* Constrain content width */
+            margin: 20px auto; /* Center main content */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 1px solid #eee; /* Separator between sections */
+        }
+
+        section:last-child {
+            border-bottom: none; /* No separator for the last section */
+        }
+
+        section h2 {
+            color: #2980b9; /* Blue heading */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 30px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <h1>Hello from My GitHub Page!</h1>
-    <p>This is my first static website hosted directly from GitHub.</p>
-    <p>Stay tuned for more updates!</p>
+
+    <header>
+        <h1>My GitHub Pages Site</h1>
+        <p>A place for my projects, thoughts, and more!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-image">
+            <h2>Welcome!</h2>
+            <img src="https://via.placeholder.com/800x300?text=Your+Awesome+Hero+Image+Here" alt="Placeholder Hero Image">
+            <p>Thanks for visiting my corner of the internet. Here you'll find a growing collection of my work and interests.</p>
+        </section>
+
+        <section id="about-section">
+            <h2>Who Am I?</h2>
+            <p>I'm a passionate learner and developer exploring the world of web technologies, programming, and more. This site is a testament to my journey and a place to share what I discover.</p>
+            <p>I'm particularly interested in Java, web development, and exploring new programming paradigms. I believe in continuous learning and building things from scratch to truly understand them.</p>
+        </section>
+
+        <section id="projects-preview">
+            <h2>Latest Projects</h2>
+            <p>Check out some of my recent work. You'll find more details on the <a href="projects.html">Projects page</a>.</p>
+            <ul>
+                <li><strong>Simple To-Do List App (Java):</strong> A console-based application demonstrating basic CRUD operations.</li>
+                <li><strong>Interactive Quiz (HTML/CSS/JS):</strong> A small web-based quiz to test knowledge on a specific topic.</li>
+                <li><strong>Data Visualization Script (Python):</strong> A script to process and visualize data from a CSV file.</li>
+            </ul>
+        </section>
+
+        <section id="contact-info">
+            <h2>Get in Touch</h2>
+            <p>I'm always open to new ideas, collaborations, or just a friendly chat. Feel free to reach out!</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Connect on: <a href="https://github.com/your-username" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name/Your Username. All rights reserved.</p>
+        <p>Built with ❤️ and GitHub Pages.</p>
+    </footer>
+
 </body>
 </html>
